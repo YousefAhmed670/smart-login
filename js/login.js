@@ -6,7 +6,7 @@ var signupList = JSON.parse(localStorage.getItem("signupList")) || [];
 
 loginBtn.addEventListener("click", function () {
   if (signinEmail.value == "" || signinPass.value == "") {
-    loginText.innerHTML = `<p class="text-danger fs-5 py-3">All inputs is required<</p>`;
+    loginText.innerHTML = `<p class="text-danger fs-5 py-3">All inputs is required</p>`;
   } else {
     for (var i = 0; i < signupList.length; i += 1) {
       if (
